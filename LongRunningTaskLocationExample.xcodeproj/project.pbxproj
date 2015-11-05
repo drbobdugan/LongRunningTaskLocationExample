@@ -13,6 +13,7 @@
 		280BFB331BEBB2DB0070EA1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280BFB311BEBB2DB0070EA1B /* Main.storyboard */; };
 		280BFB351BEBB2DB0070EA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280BFB341BEBB2DB0070EA1B /* Assets.xcassets */; };
 		280BFB381BEBB2DB0070EA1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280BFB361BEBB2DB0070EA1B /* LaunchScreen.storyboard */; };
+		280BFB411BEBB8C90070EA1B /* BackgroundTimeRemainingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 280BFB401BEBB8C90070EA1B /* BackgroundTimeRemainingUtility.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		280BFB341BEBB2DB0070EA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280BFB371BEBB2DB0070EA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280BFB391BEBB2DB0070EA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280BFB3F1BEBB8C10070EA1B /* BackgroundTimeRemainingUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundTimeRemainingUtility.h; sourceTree = "<group>"; };
+		280BFB401BEBB8C90070EA1B /* BackgroundTimeRemainingUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTimeRemainingUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				280BFB2B1BEBB2DB0070EA1B /* AppDelegate.h */,
 				280BFB2C1BEBB2DB0070EA1B /* AppDelegate.m */,
+				280BFB3F1BEBB8C10070EA1B /* BackgroundTimeRemainingUtility.h */,
+				280BFB401BEBB8C90070EA1B /* BackgroundTimeRemainingUtility.m */,
 				280BFB2E1BEBB2DB0070EA1B /* ViewController.h */,
 				280BFB2F1BEBB2DB0070EA1B /* ViewController.m */,
 				280BFB311BEBB2DB0070EA1B /* Main.storyboard */,
@@ -110,6 +115,11 @@
 				TargetAttributes = {
 					280BFB241BEBB2DB0070EA1B = {
 						CreatedOnToolsVersion = 7.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -149,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280BFB411BEBB8C90070EA1B /* BackgroundTimeRemainingUtility.m in Sources */,
 				280BFB301BEBB2DB0070EA1B /* ViewController.m in Sources */,
 				280BFB2D1BEBB2DB0070EA1B /* AppDelegate.m in Sources */,
 				280BFB2A1BEBB2DB0070EA1B /* main.m in Sources */,
@@ -264,6 +275,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LongRunningTaskLocationExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stonehill.edu.LongRunningTaskLocationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LongRunningTaskLocationExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stonehill.edu.LongRunningTaskLocationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

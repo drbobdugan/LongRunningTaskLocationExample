@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreLocation;
+#import "BackgroundTimeRemainingUtility.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CLLocationManagerDelegate>
 
+@property (strong, atomic) CLLocationManager* locationManager;
+
+@property (weak, nonatomic) IBOutlet UILabel *latitude;
+@property (weak, nonatomic) IBOutlet UILabel *longitude;
+@property (weak, nonatomic) IBOutlet UILabel *speed;
 
 @end
 
