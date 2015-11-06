@@ -48,6 +48,6 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Privacy - Location Usage Description</string>
+	<string>You need to accept this if you want the application to work with location services.</string>
 </dict>
 </plist>
